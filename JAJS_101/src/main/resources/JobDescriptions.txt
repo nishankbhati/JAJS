@@ -1,4 +1,4 @@
-Acrade 3 Want a person having C++, Java, Pyhton
+Acrade 3 Want a person having C++, Java, Python
 Amazon 0 Want a person having  PHP, XML
 EdgeNetworks 9 Want a person having C++
 Google 0 Want a person having Magik , Modula-2, C++
