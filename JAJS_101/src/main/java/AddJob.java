@@ -27,8 +27,9 @@ public class AddJob {
 
         Multimap<String, Pair> Language = hashTable.Language;
 
-
-        // Company, Exp u years,  JD[" "]
+        /*
+        Format of JD {CompanyName, Min Experience Required, Job Detailed Description}
+        */
         while (in.ready()) {
             String detail = in.nextLine();
             String[] data = detail.split(" ");
