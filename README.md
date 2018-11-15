@@ -15,4 +15,7 @@ Classes Overview
 | ---------- | ------------- |
 | MainClass | Flow of execution will start here |
 | Add Job   | This Class adds job. Currently the input is processed from the file(JobDescrption.txt), direct addition of jobs will be made soon |
-| SearchJob | This class contains meathod SearchJobUtil which will use list of technologies and experience as and will rank the job which have more number of relevant technology higher
+| SearchJob | This class contains meathod SearchJobUtil which will use list of technologies and experience as and will rank the job which have more number of relevant technology higher |
+| Pair | A version of C++ STL Pair implemented in JAVA |
+| FastReader | For faster I/O |
+
