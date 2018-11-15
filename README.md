@@ -9,6 +9,8 @@ Guidelines for running the project.
 3. Open as Maven project.
 4. Build project and run MainClass .
 
+**NOTE -** If you are seaching for more than one technologies then use space to separate mutliple technlogies. 
+
 ## Classes Overview
 
 | Class Name | Functionality |
