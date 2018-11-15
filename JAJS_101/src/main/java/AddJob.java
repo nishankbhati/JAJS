@@ -13,16 +13,17 @@ import javax.swing.*;
 public class AddJob {
 
     static int id = 100000000;
+    
+   //The Following hashmap contains JOBID as key and Company Name as value for faster data retrieval
     HashMap<Integer,String> Jobtable = new HashMap<>();
 
     public void AddJobUtil(SaveToHashTable hashTable) throws IOException {
+        
+        // Loads the Job description file from the resource folder
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource("JobDescriptions.txt").getFile());
 
-
-
         FastReader in = new FastReader(new FileInputStream(file));
-
 
         Multimap<String, Pair> Language = hashTable.Language;
 
@@ -44,7 +45,7 @@ public class AddJob {
             }
             id++;
         }
-
+    // Check if data is add in correct way in HashMap
         hashTable.printLanguageMap();
     }
 }
