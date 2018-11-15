@@ -19,16 +19,10 @@ public class AddJob {
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource("JobDescriptions.txt").getFile());
 
-//        JFrame f=new JFrame();
-//        FileWriter fileWriter = new FileWriter(file);
-//        String nameofcompany=JOptionPane.showInputDialog(f,"Enter Name of Company");
-//        String Experience=JOptionPane.showInputDialog(f,"Enter Minimum Experience");
-//        String JDesc =JOptionPane.showInputDialog(f,"Enter JD");
-//        String fin= nameofcompany +" "+ Experience+ " "+ JDesc;
+
 
         FastReader in = new FastReader(new FileInputStream(file));
-//        fileWriter.write(fin);
-       // fileWriter.close();
+
 
         Multimap<String, Pair> Language = hashTable.Language;
 
@@ -46,7 +40,7 @@ public class AddJob {
                 if (Language.containsKey(d)) {
                     Language.put(d, new Pair(id, exp));
                 }
-                //id++;
+
             }
             id++;
         }
