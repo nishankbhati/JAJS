@@ -7,7 +7,7 @@ Guidelines for running the project.
 1. Open Intellij/ Eclipse .
 2. Download this repo.
 3. Open as Maven project.
-4. Build project and run MainClass
+4. Build project and run MainClass .
 
 ## Classes Overview
 
