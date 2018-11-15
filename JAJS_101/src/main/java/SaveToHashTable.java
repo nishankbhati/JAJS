@@ -20,7 +20,7 @@ public class SaveToHashTable {
             String s = in.nextLine();
             Language.put(s, new Pair(-1, 100));
         }
-//        System.out.println("-----------------------------1-----------------------------");
+
 //        printLanguageMap();
     }
     /*
