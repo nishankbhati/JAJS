@@ -22,3 +22,11 @@ Guidelines for running the project.
 ## Few Screeshots
 
 ![ss1](https://user-images.githubusercontent.com/15635300/48531195-55c36100-e8c1-11e8-95f6-807927e04c40.png)
+
+
+![ss2](https://user-images.githubusercontent.com/15635300/48531481-61635780-e8c2-11e8-9c97-a42abadf5a8b.png)
+
+
+![screenshot from 2018-11-15 10-26-45](https://user-images.githubusercontent.com/15635300/48531506-7cce6280-e8c2-11e8-8d70-8dd5e89c2fc1.png)
+
+
