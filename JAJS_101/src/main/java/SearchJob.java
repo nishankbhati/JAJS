@@ -11,6 +11,7 @@ public class SearchJob {
         String Lang=JOptionPane.showInputDialog(f,"Enter Language");
         String[] data = Lang.split(" ");
         int exper=Integer.parseInt(JOptionPane.showInputDialog(f,"Enter Experience"));
+        /* Each entry of data will contain name of Language/Technology*/
         for(int i=0;i<data.length;i++){
             System.out.println(data[i]);
         }
@@ -18,8 +19,9 @@ public class SearchJob {
         Multimap<String, Pair> Language = hashTable.Language;
         HashMap<Integer,String> Jobtable = addJob.Jobtable;
 
+        // tMap contains frequency of each JOB as value and JOBID as Key
 
-        TreeMap<Integer,Integer> rank= new TreeMap<>();
+        TreeMap<Integer,Integer> tMap= new TreeMap<>();
         System.out.println("The following jobs are available for your search");
         for(int i=0;i<data.length;i++) {
             Collection<Pair> pairCollection = Language.get(data[i]);
@@ -27,21 +29,22 @@ public class SearchJob {
                 if (pp.second <= exper) {
                     int JID = pp.first;
 
-                    if(rank.containsKey(JID)){
-                        int priority=rank.get(JID);
-                        rank.put(JID,priority+1);
+                    if(tMap.containsKey(JID)){
+                        int priority=tMap.get(JID);
+                        tMap.put(JID,priority+1);
                     }
                     else{
-                        rank.put(JID,1);
+                        tMap.put(JID,1);
                     }
                 }
             }
         }
-        if(rank.size()==0){
+        if(tMap.size()==0){
             System.out.println("No Jobs Found");
             System.exit(0);
         }
-        Set<Map.Entry<Integer, Integer>> set = rank.entrySet();
+        Set<Map.Entry<Integer, Integer>> set = tMap.entrySet();
+        // List Ranking will help in sorting according to Ranking criteria mentioned in assignment
         List<Pair> Ranking = new ArrayList<>();
         for(Map.Entry<Integer,Integer> it : set){
 
@@ -51,6 +54,7 @@ public class SearchJob {
 
 
         }
+
         Collections.sort(Ranking,Collections.<Pair>reverseOrder());
 
         for(Pair tmp: Ranking){
